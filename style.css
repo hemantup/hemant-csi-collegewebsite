@@ -5,7 +5,7 @@
 }
 
 .header{
-    background-color: burlywood;
+    background-color: rgb(222, 184, 135);
     position: sticky;
     overflow: hidden;
 }
@@ -43,7 +43,7 @@ nav{
 
 .dropdown{
     display: none;
-    background-color: gray;
+    background-color: rgba(222, 184, 135,0.4);
 }
 
 .nav-links ul li:hover .dropdown{
