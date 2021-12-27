@@ -16,7 +16,8 @@ nav{
 .nav-links ul{
     text-align: right;
     display: flex;
-    padding-top: 6px;
+    padding-top: 8px;
+    margin-right: 26px;
 }
 .nav-links ul li{
     list-style: none;
@@ -30,23 +31,31 @@ nav{
     color: black;
     font-size: 14px;
 }
-.sub-menu1{
+.dropdown{
     display: none;
-    background-color: burlywood;
+    background-color: gray;
 }
-.nav-links ul li:hover .sub-menu1{
+.nav-links ul li:hover .dropdown{
     display: block;
     position: absolute;
-    margin-top: 12px;
+    display: flex;
+    margin-top: 0.6rem;
     font-size: 14px;
-    margin-left: -12px;
 }
 
-.nav-links ul li:hover .sub-menu1 ul{
+.nav-links ul li:hover .dropdown ul{
     display: block;
     margin: 10px;
 }
-.nav-links ul li:hover .sub-menu1 ul li{
+.nav-links ul li:hover .dropdown ul li{
     text-align: left;
-
+    padding-left: 2%;
+}
+.nav-links ul li .dropdown .row td{
+    text-align: left;
+    padding: 6px;
+}
+.nav-links ul li:hover .dropdown .row{
+    table-layout: fixed;
+    width: 30.5rem;
 }
