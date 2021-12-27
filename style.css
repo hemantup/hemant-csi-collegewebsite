@@ -3,59 +3,144 @@
     padding: 0;
     font-family: sans-serif,'Poppins';
 }
+
 .header{
     background-color: burlywood;
+    position: sticky;
+    overflow: hidden;
 }
+
 .header nav img{
     width: 150px;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
 }
+
 .nav-links ul{
     text-align: right;
     display: flex;
     padding-top: 8px;
-    margin-right: 26px;
+    margin-right: 3rem;
 }
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding-left: 2rem;
+    padding-bottom: 12px;
     position: relative;
 }
+
 
 .nav-links ul li a{
     text-decoration: none;
     color: black;
     font-size: 14px;
 }
+
 .dropdown{
     display: none;
     background-color: gray;
 }
+
 .nav-links ul li:hover .dropdown{
     display: block;
-    position: absolute;
-    display: flex;
+    position: fixed;
     margin-top: 0.6rem;
     font-size: 14px;
 }
 
 .nav-links ul li:hover .dropdown ul{
     display: block;
+    display: flex;
+    flex-direction: column;
     margin: 10px;
 }
+
 .nav-links ul li:hover .dropdown ul li{
     text-align: left;
     padding-left: 2%;
 }
+
 .nav-links ul li .dropdown .row td{
     text-align: left;
     padding: 6px;
 }
+
 .nav-links ul li:hover .dropdown .row{
     table-layout: fixed;
     width: 30.5rem;
+}
+
+.introduction{
+    height: 92.5vh;
+    background-image: url(image/college.jpg);
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introduction h1{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+.introduction .hero-btn{
+    background-color: #1c87c9;
+    border: none;
+    padding: 20px 34px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.introduction .hero-btn a{
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #c4c4c4;
+    padding: 1.8rem;
+}
+
+.footer .align{
+    display: flex;
+    padding: 6px;
+}
+
+.footer .list ul li{
+    list-style: none;
+    padding-bottom: 2px;
+    margin-left: 8px;
+}
+
+.quicklinks p{
+    font-size: 20px;
+    margin-left: -30px;
+}
+
+.quicklinks ul li{
+    padding-bottom: 4px;
+}
+
+.aboutus .about{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.aboutus p{
+    font-size: 20px;
+    text-align: justify;
 }
