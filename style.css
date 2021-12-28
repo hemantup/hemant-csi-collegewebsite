@@ -7,11 +7,11 @@
 .header{
     background-color: rgb(222, 184, 135);
     position: sticky;
-    overflow: hidden;
 }
 
 .header nav img{
     width: 150px;
+    margin-left: 1rem;
 }
 
 nav{
@@ -113,8 +113,9 @@ nav{
 /* About us */
 .about_us{
     margin: 1rem;
+    height: 96vh;
 }
-.about_us h1{
+h1{
     text-align: center;
     font-size: 40px;
     padding: 10px;
@@ -123,10 +124,13 @@ nav{
     padding: 1rem;
 }
 
-.about_us img{
-    width: 20rem;
-    height: 10rem;
+.about_us .skew{
+    width: 40rem;
+    height: 26rem;
+    margin-left: 2rem;
     transform: skewX(-20deg);
+    background-image: url(image/college.jpg);
+    background-size: contain;
 }
 
 .about_us .para{
@@ -135,13 +139,50 @@ nav{
 }
 
 /* Featured-Course */
+.course{
+    background-color: rgb(114, 114, 114);
+}
 .course .hero-btn{
-    background-color: indianred;
+    background-color: rgb(94, 84, 84);
     border-radius: 20px;
     padding: 12px 18px;
     font-size: 18px;
 }
 
+/* flashcard */
+.flashcard{
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+}
+.card{
+    width: 24rem;
+    height: 24rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 0.2rem 0.2rem 0.5rem rgba(58, 52, 52, 0.4);
+}
+
+.card img{
+    width: 24rem;
+    height: 13rem;
+    border-radius: 1.6rem 1.6rem 0 0;
+    /* padding: 1rem; */
+}
+.card h3{
+    margin-bottom: 6px;
+}
+.card p, .readmore p, .card h3{
+    padding: 4px;    
+    margin-left: 1rem;
+}
+.readmore .hero-btn{
+    margin-left: 1rem;
+}
 
 /* Footer */
 .footer{
