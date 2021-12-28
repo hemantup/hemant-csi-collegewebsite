@@ -75,6 +75,8 @@ nav{
     width: 30.5rem;
 }
 
+
+/* introduction */
 .introduction{
     height: 92.5vh;
     background-image: url(image/college.jpg);
@@ -93,7 +95,8 @@ nav{
     color:rgb(255, 255, 255);
 }
 
-.introduction .hero-btn{
+
+.hero-btn{
     background-color: #1c87c9;
     border: none;
     padding: 20px 34px;
@@ -104,10 +107,43 @@ nav{
     border-radius: 50px;
 }
 
-.introduction .hero-btn a{
+.hero-btn a{
     text-decoration: none;
 }
+/* About us */
+.about_us{
+    margin: 1rem;
+}
+.about_us h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+.about_us .para pre{
+    padding: 1rem;
+}
 
+.about_us img{
+    width: 20rem;
+    height: 10rem;
+    transform: skewX(-20deg);
+}
+
+.about_us .para{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Featured-Course */
+.course .hero-btn{
+    background-color: indianred;
+    border-radius: 20px;
+    padding: 12px 18px;
+    font-size: 18px;
+}
+
+
+/* Footer */
 .footer{
     display: flex;
     justify-content: space-around;
