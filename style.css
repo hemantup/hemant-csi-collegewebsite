@@ -6,7 +6,9 @@
 
 .header{
     background-color: rgb(222, 184, 135);
-    position: sticky;
+    /* position: fixed; */
+    width: 100%;
+
 }
 
 .heading{
@@ -55,9 +57,12 @@ nav{
 
 .nav-links ul li:hover .dropdown{
     display: block;
+    border: 2px solid black;
+    border-radius: 10px;
     position: fixed;
     margin-top: 0.6rem;
     font-size: 14px;
+    z-index: 1;
 }
 
 .nav-links ul li:hover .dropdown ul{
@@ -88,7 +93,7 @@ nav{
     height: 92.5vh;
     background-image: url(image/college.jpg);
     background-size: cover;
-    z-index: -1;
+    /* z-index: -1; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,9 +120,9 @@ nav{
     border-radius: 6px;
     background: #3e2093;
     cursor: pointer;
-    transition: all 0.3s ease;
+    
   }
-.alignbutton{
+.align{
     text-align: center;
     margin: 0.5rem;
     margin-left: 1rem;
@@ -163,7 +168,7 @@ h1{
 
 .slide{
     float: left;
-    height: 25rerm;
+    height: 25rem;
     width: 37rem;
 }
 
