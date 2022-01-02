@@ -122,10 +122,15 @@ nav{
     cursor: pointer;
     
   }
-.align{
+.alignbutton{
     text-align: center;
     margin: 0.5rem;
     margin-left: 1rem;
+}
+
+.align{
+    margin: 0.2rem;
+    
 }
 
   .button input[type="button"]:hover{
